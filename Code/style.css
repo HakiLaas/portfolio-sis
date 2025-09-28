@@ -30,7 +30,7 @@
     --shadow-gradient-white-5: rgba(255, 255, 255, 0.5);
     --shadow-gradient-white-8: 0 5px 10px -2px rgba(255, 255, 255, 0.8);
     --shadow-button: 0 10px 10px -8px rgba(231, 230, 230, 0.78);
-    --shadow-bottom: 5px 13px 30px rgba(0, 0, 0, 0.2);
+    --shadow-bottom-dark: 5px 13px 30px rgba(0, 0, 0, 0.2);
     --shadow-bottom-card: 5px 13px 30px rgba(0, 0, 0, 0.2);
     --shadow-white: 0 10px 10px -8px;
 
