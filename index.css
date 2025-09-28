@@ -1,6 +1,6 @@
 /* Icon */
 .bx.bx-sun {
-    color: var(--black);
+    color: var(--dark);
     font-size: 30px;
     position: absolute;
     top: 25px;
@@ -9,11 +9,11 @@
     cursor: pointer;
 }
 
-#sun{
+#sun {
     display: none;
 }
 
-.about-text span{
+.about-text span {
     color: var(--primary);
 }
 
@@ -62,12 +62,13 @@ section {
 
 h1,
 h2,
-h3{
+h3 {
     margin-bottom: 2rem;
     color: var(--dark);
 }
 
-h4, li{
+h4,
+li {
     color: var(--dark);
 }
 
@@ -103,6 +104,10 @@ p {
     color: var(--dark);
     margin-bottom: 15px;
     font-size: 1.1rem;
+}
+
+span {
+    color: var(--primary);
 }
 
 .btn {
@@ -214,7 +219,7 @@ header.scrolled {
 }
 
 /* Next Section */
-.next-section{
+.next-section {
     position: fixed;
     bottom: 100px;
     right: 50px;
@@ -226,11 +231,11 @@ header.scrolled {
     transition: background-color 0.3s ease;
 }
 
-.next-section:hover{
+.next-section:hover {
     background-color: var(--accent);
 }
 
-.next-section a i{
+.next-section a i {
     text-decoration: none;
     color: var(--light);
     font-size: 24px;
@@ -600,39 +605,40 @@ header.scrolled {
 }
 
 /* Gallery */
-.gallery-container{
+.gallery-container {
     padding: 3rem 1rem;
     margin: 0 2rem;
 }
 
-.gallery-tittle h2, .gallery-tittle span{
+.gallery-tittle h2,
+.gallery-tittle span {
     font-size: 3rem;
     color: var(--text-black);
     text-align: center;
 }
 
-.gallery-tittle p{
+.gallery-tittle p {
     text-align: center;
     font-weight: 500;
     color: var(--black);
 }
 
-.gallery-tittle{
+.gallery-tittle {
     padding: 7rem 3rem;
 }
 
-.gallery-tittle span{
+.gallery-tittle span {
     color: var(--greenblue);
 }
 
-.gallery{
+.gallery {
     columns: 300px;
     column-gap: 15px;
     overflow: hidden;
 }
 
-.gallery-item{
-    position: relative; 
+.gallery-item {
+    position: relative;
     margin-bottom: 1rem;
     overflow: hidden;
     border-radius: 8px;
@@ -641,43 +647,43 @@ header.scrolled {
 }
 
 /* Gambar */
-.gallery img{
+.gallery img {
     width: 100%;
     display: block;
     border-radius: 8px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.gallery-item:hover img{
+.gallery-item:hover img {
     transition: all .5s ease;
     transform: scale(1.05);
     filter: brightness(0.6);
 }
 
-.gallery-item .description{ 
+.gallery-item .description {
     position: absolute;
-    bottom: 0;  
+    bottom: 0;
     left: 0;
     width: 100%;
-    color: white; 
+    color: white;
     background: rgba(0, 0, 0, 0.7);
     padding: 10px;
     font-size: 1rem;
     text-align: center;
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.3s ease, transform 0.3s ease; 
+    transition: opacity 0.3s ease, transform 0.3s ease;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
 
-.gallery-item:hover .description{
+.gallery-item:hover .description {
     opacity: 1;
-    transform: translateY(0); 
+    transform: translateY(0);
 }
 
 /* Lightbox */
-.lightbox{
+.lightbox {
     display: none;
     flex-direction: column;
     position: fixed;
@@ -685,23 +691,24 @@ header.scrolled {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.9); 
+    background: rgba(0, 0, 0, 0.9);
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    animation: fadeIn 0.5s ease-in-out; 
+    animation: fadeIn 0.5s ease-in-out;
 }
 
-@keyframes fadeIn{
-    from{
+@keyframes fadeIn {
+    from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
 
-.lightbox-image{
+.lightbox-image {
     max-width: 90%;
     max-height: 70%;
     margin-bottom: 1rem;
@@ -709,20 +716,20 @@ header.scrolled {
     transition: transform 0.3s ease;
 }
 
-.lightbox-image:hover{
+.lightbox-image:hover {
     transform: scale(1.05);
 }
 
 
-.lightbox-caption{
+.lightbox-caption {
     color: #fff;
     font-size: 1.2rem;
     text-align: center;
     padding: 1rem;
-    max-width: 90%; 
+    max-width: 90%;
 }
 
-.lightbox .close{
+.lightbox .close {
     position: absolute;
     top: 20px;
     right: 30px;
@@ -732,23 +739,24 @@ header.scrolled {
     transition: transform 0.3s ease;
 }
 
-.lightbox .close:hover{
-    transform: scale(1.2); 
+.lightbox .close:hover {
+    transform: scale(1.2);
 }
 
 /* Animasi Zoom */
-.zoom-in{
-    transform: scale(0.9); 
+.zoom-in {
+    transform: scale(0.9);
     animation: zoomIn 0.3s ease forwards;
 }
 
 
-@keyframes zoomIn{
-    from{
+@keyframes zoomIn {
+    from {
         transform: scale(0.9);
         opacity: 0;
     }
-    to{
+
+    to {
         transform: scale(1);
         opacity: 1;
     }
@@ -796,7 +804,7 @@ header.scrolled {
     font-size: 1.2rem;
 }
 
-.contact-icon i{
+.contact-icon i {
     color: var(--light);
 }
 
@@ -847,7 +855,8 @@ footer {
     margin-bottom: 30px;
 }
 
-.footer-content h3, .footer-content p{
+.footer-content h3,
+.footer-content p {
     color: var(--light);
 }
 
@@ -884,7 +893,7 @@ footer {
     color: var(--light);
 }
 
-.copyright p{
+.copyright p {
     color: var(--light);
 }
 
@@ -899,6 +908,27 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.fade-in {
+    animation: fadeUp 0.8s forwards;
+}
+
+/* Fade out baru */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+}
+
+.fade-out {
+    animation: fadeOut 0.8s forwards;
 }
 
 @keyframes pulse {
@@ -1024,5 +1054,12 @@ footer {
 
     .container {
         width: 95%;
+    }
+    .contact-icon{
+        width: 35px;
+        height: 35px;
+    }
+    .contact-icon i{
+        font-size: 1rem;
     }
 }

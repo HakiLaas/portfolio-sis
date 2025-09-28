@@ -37,17 +37,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Animation on Scroll
 function animateOnScroll() {
-    const elements = document.querySelectorAll('.about-img, .about-text, .skill-category, .timeline-item, .portfolio-item, .contact-info, .contact-form');
+    const elements = document.querySelectorAll(
+        '.about-img, .about-text, .skill-category, .timeline-item, .portfolio-item, .contact-info, .contact-form'
+    );
 
     elements.forEach(element => {
         const elementTop = element.getBoundingClientRect().top;
-        const elementVisible = 150;
+        const elementBottom = element.getBoundingClientRect().bottom;
+        const inView = elementTop < window.innerHeight - 200 && elementBottom > 0;
 
-        if (elementTop < window.innerHeight - elementVisible) {
-            element.classList.add('animated');
+        if (inView) {
+            element.classList.add('animated');    // fade in
+        } else {
+            element.classList.remove('animated'); // fade out (auto by CSS transition)
         }
     });
 }
+
+window.addEventListener('load', animateOnScroll);
+window.addEventListener('scroll', animateOnScroll);
 
 // Portfolio Filtering
 document.querySelectorAll('.filter-btn').forEach(button => {
@@ -93,7 +101,7 @@ setInterval(() => {
     setTimeout(() => {
         ctaBtn.classList.remove('pulse');
     }, 2000);
-}, 8000);
+}, 4000);
 
 // Hamburger Menu
 var togglebtn = document.querySelector(".togglebtn");
