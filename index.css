@@ -229,7 +229,7 @@ header.scrolled {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, rgba(231, 76, 60, 0.7), rgba(243, 156, 18, 0.3)), url(/Assets/image.png) no-repeat center center/cover;
+    background: linear-gradient(135deg, rgba(231, 76, 60, 0.7), rgba(243, 156, 18, 0.3)), url(Assets/image.png) no-repeat center center/cover;
     color: var(--light);
     text-align: center;
     position: relative;
