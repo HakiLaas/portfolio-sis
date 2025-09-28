@@ -11,7 +11,8 @@ window.addEventListener('scroll', function () {
     } else {
         header.classList.remove('scrolled');
     }
-});
+})
+
 
 // Smooth Scrolling for Navigation Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
